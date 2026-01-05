@@ -1,0 +1,37 @@
+#ItsProyect
+
+Este es el entorno de trabajo, con la preparación de las herramientas de trabajo. 
+1. Django 
+2. DRF (Extensión de Django)
+3. SimpleJWT DRF (Utilitario para authenticación)
+
+#INSTALACIÓN
+
+1. Activación del entorno
+
+Para la instalación de requerimientos necesitaremos como primer paso activar un entorno
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+2. Instalación de requerimientos
+
+```bash
+pip install -r requirements.txt
+```
+
+# Preparación del Backend
+
+1. Migrar Datos
+para migrar toda la configuración y alterar las tablas para el uso de SimpleJWT aplicamos el sigt prompt.
+
+```bash
+python manage.py migrate
+```
+
+
