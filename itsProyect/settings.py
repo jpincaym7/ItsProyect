@@ -20,8 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 #ENVIRON
+import os 
 import environ
-import os
 
 env = environ.Env()
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
